@@ -23,7 +23,7 @@ Use these final URLs:
 - GitHub Repository Link: `https://github.com/ShikharPatwa/inventory-order-system`
 - Backend Docker Hub Image Link: `https://hub.docker.com/r/shikharpatwa/inventory-order-backend`
 - Frontend Hosted URL: `https://inventory-order-frontend-shikhar.loca.lt`
-- Backend API Hosted URL: `https://inventory-order-backend-shikhar.loca.lt`
+- Backend API Hosted URL: `https://witty-ape-20.loca.lt`
 
 ## Public Hosting Notes
 
