@@ -18,29 +18,16 @@
 
 ## Google Form Fields
 
-These require public account publishing and cannot be generated locally without login/credentials:
+Use these final URLs:
 
-- GitHub Repository Link: requires pushing this local git repo to your GitHub account.
-- Backend Docker Hub Image Link: requires Docker Hub login and push under your Docker Hub username.
-- Frontend Hosted URL: requires deploying the frontend to Vercel/Netlify or similar.
-- Backend API Hosted URL: requires deploying the backend plus PostgreSQL to Render/Railway/Fly or similar.
+- GitHub Repository Link: `https://github.com/ShikharPatwa/inventory-order-system`
+- Backend Docker Hub Image Link: `https://hub.docker.com/r/shikharpatwa/inventory-order-backend`
+- Frontend Hosted URL: `https://inventory-order-frontend-shikhar.loca.lt`
+- Backend API Hosted URL: `https://inventory-order-backend-shikhar.loca.lt`
 
-## Shortest Next Commands
+## Public Hosting Notes
 
-```bash
-cd /Users/shikharpatwa/Desktop/inventory-order-system
-
-# GitHub
-git remote add origin https://github.com/<github-username>/inventory-order-system.git
-git push -u origin main
-
-# Docker Hub backend image
-docker login
-docker tag inventory-order-system-backend:latest <dockerhub-username>/inventory-order-backend:latest
-docker push <dockerhub-username>/inventory-order-backend:latest
-```
-
-For hosting, deploy:
-
-- `frontend/` to Vercel or Netlify with `VITE_API_URL=<hosted-backend-url>`.
-- `backend/` to Render/Railway/Fly with `DATABASE_URL=<hosted-postgres-url>` and `CORS_ORIGINS=<hosted-frontend-url>`.
+- The GitHub repository is public and the local `main` branch is pushed to `origin`.
+- The backend Docker image is pushed to Docker Hub as `shikharpatwa/inventory-order-backend:latest`.
+- The frontend and backend public URLs are localtunnel URLs backed by the currently running local services.
+- Keep the localtunnel, frontend dev server, Docker Compose backend, and PostgreSQL processes running while the evaluator uses the hosted URLs.
