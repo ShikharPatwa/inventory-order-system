@@ -22,12 +22,12 @@ Use these final URLs:
 
 - GitHub Repository Link: `https://github.com/ShikharPatwa/inventory-order-system`
 - Backend Docker Hub Image Link: `https://hub.docker.com/r/shikharpatwa/inventory-order-backend`
-- Frontend Hosted URL: `https://inventory-order-frontend-shikhar.loca.lt`
-- Backend API Hosted URL: `https://witty-ape-20.loca.lt`
+- Frontend Hosted URL: `https://twenty-sloths-smash.loca.lt`
+- Backend API Hosted URL: `https://real-seals-write.loca.lt`
 
 ## Public Hosting Notes
 
 - The GitHub repository is public and the local `main` branch is pushed to `origin`.
 - The backend Docker image is pushed to Docker Hub as `shikharpatwa/inventory-order-backend:latest`.
 - The frontend and backend public URLs are localtunnel URLs backed by the currently running local services.
-- Keep the localtunnel, frontend dev server, Docker Compose backend, and PostgreSQL processes running while the evaluator uses the hosted URLs.
+- Keep the two live localtunnel sessions, Docker Compose frontend, backend, and PostgreSQL processes running while the evaluator uses the hosted URLs.
